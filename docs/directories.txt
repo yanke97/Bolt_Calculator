@@ -1,0 +1,5 @@
+material_directory = H:/03_Bolt_Calculator_v1_1/docs/Materials.mat
+cad_input = H:/03_Bolt_Calculator_v1_1/docs/CAD_templates
+measurements_input = H:/03_Bolt_Calculator_v1_1/docs/bolt_measurements.xlsx
+file_output = H:/03_Bolt_Calculator_v1_1/docs/Files_output
+cad_output = H:/03_Bolt_Calculator_v1_1/docs/CAD_output
