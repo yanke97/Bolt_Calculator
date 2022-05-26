@@ -53,7 +53,8 @@ class Report(FPDF):
 
     """
 
-    def __init__(self, bolt: Bolt, calc: Calculation, path: str, function: Callable):
+    def __init__(self, cwd: Path, bolt: Bolt, calc: Calculation, path: str, function: Callable):
+        self._cwd: Path = cwd
         self._bolt_info: Dict[str, str] = bolt.report_dict()
         self._mat_info: Dict[str, str] = bolt.material.report_dict()
         self._calc_info: Dict[str, str] = calc.report_dict()
@@ -86,7 +87,7 @@ class Report(FPDF):
         today = date.today().strftime("%d.%m.%Y")
 
         self.set_font('Helvetica', '', 12)
-        self.image(r"H:\Bolt_Calculator_v2\startup\b_c_logo.png", w=10, h=10)
+        self.image(str(self._cwd.joinpath("docs", "b_c_logo.png")), w=10, h=10)
         self.set_xy(30, 10)
         self.multi_cell(30, 5, "Bolt\nCalculator", 0)
         self.set_xy(80, 10)
@@ -205,9 +206,9 @@ class Report(FPDF):
                 path = self._path/name.format(self._bolt_info["Name:"], i)
                 if not path.exists():
                     self.output(str(path))
-                    return
-            startfile(
-                str(self._path/name.format(self._bolt_info["Name:"], "")))
+                startfile(
+                    str(self._path/name.format(self._bolt_info["Name:"], "")))
+                return
         except OSError:
             self._function("PathError occured.")
             raise PathError(self._path) from None

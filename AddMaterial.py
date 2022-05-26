@@ -1,7 +1,9 @@
-from tkinter import messagebox, ttk, Toplevel, Frame, BOTH, END, Event
-from typing import Callable, List
-from Material import Material, MaterialType, MaterialFileNotFoundError, MaterialTypeError
 from pathlib import Path
+from tkinter import BOTH, END, Event, Frame, Toplevel, messagebox, ttk
+from typing import Callable, List
+
+from Material import (Material, MaterialFileNotFoundError, MaterialType,
+                      MaterialTypeError)
 
 
 class AddMaterial(Frame):
@@ -13,6 +15,7 @@ class AddMaterial(Frame):
         Frame.__init__(self, master)
 
         self.master: Toplevel = master
+        self._cwd: Path = cwd
         self._path: str = path
         self._materials: List[Material] = materials
         self._function: Callable = function
@@ -23,7 +26,7 @@ class AddMaterial(Frame):
         self._labels: List[ttk.Label] = list()
 
         self.master.title("Add Material")
-        self.master.iconbitmap(cwd.joinpath("docs", "b_c_logo.ico"))
+        self.master.iconbitmap(self._cwd.joinpath("docs", "b_c_logo.ico"))
         self.master.resizable(False, False)
         self._import_mattypes()
 
@@ -135,7 +138,7 @@ class AddMaterial(Frame):
         self._btn_cancel.bind("<Return>", self._cancel)
         self._btn_cancel.bind("<Button-1>", self._cancel)
 
-    def _reset(self, event: Event) -> None:
+    def _reset(self, _: Event) -> None:
         """
         Clear all text- and comboboxes
 
@@ -154,7 +157,7 @@ class AddMaterial(Frame):
             i.delete(0, END)
         self._cb_type.set("")
 
-    def _cancel(self, event: Event) -> None:
+    def _cancel(self, _: Event) -> None:
         """
         Close the AddMaterial Window. Defined Materials are not added
 
@@ -172,7 +175,7 @@ class AddMaterial(Frame):
         self.master.destroy()
         return 0
 
-    def _add(self, event: Event) -> None:
+    def _add(self, _: Event) -> None:
         """
         Add new material to materiallist
 
@@ -225,7 +228,7 @@ class AddMaterial(Frame):
 
                 self.master.destroy()
 
-    def _on_changed(self, event: Event, textbox: ttk.Entry) -> None:
+    def _on_changed(self, _: Event, textbox: ttk.Entry) -> None:
         """
         Check if entrie to textboxes are valid
 
