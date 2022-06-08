@@ -7,7 +7,7 @@ Additionally calculation reports or CAD models of the calculated bolts can be cr
 The aim of this tool is to support development engineers in there day to day work, by automating the frequently performed task of dimensioning bolts. This tool can help the enigneers to focus on theire main tasks and therby decrease development lead time. 
 
 ## Disclaimer 
-The creator of this application can not be held liable for possible failure of parts calculated using this software or any legal consequences which might arise from such failures.
+The creator of this application can not be held liable for possible failure of parts calculated using this software or any legal consequences which might arise from such failures. This project is licensed under the  GNU AFFERO GENERAL PUBLIC LICENSE Version 3
 
 ## How to start
 BoltCalculator does not require any installations, just download the "BoltCalculator.zip" [here](https://github.com/yanke97/Bolt_Calculator/releases/tag/v1.1). Unzip it and execute the .exe-file found insinde. Do not remove the .exe-file from the unzipped folder. You may create a shortcut to the .exe.
