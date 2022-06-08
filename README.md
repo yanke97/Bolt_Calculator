@@ -19,7 +19,18 @@ To perform calculations you need to have Microsoft Excel installed on your machi
 ## User Guide
 This section gives a brief overview of the textboxes and dropdown menus in the main window.
 
-* Force in 1/ Force in 2/ Resulting Force: This textboxes allow you to specify the load applied to the bolt. You can either enter force components (Force in 1 and Force in 2) or a Resulting Force. If you choose to enter force components the resulting force will be calculated automatically by the programm. Default is Resulting Force, this can be changed by going to *Data -> Forces*. All values must be entered in Newton.
+* **Force in 1/ Force in 2/ Resulting Force:** This textboxes allow you to specify the load applied to the bolt. You can either enter force components (Force in 1 and Force in 2) or a Resulting Force. If you choose to enter force components the resulting force will be calculated automatically by the programm. Default is Resulting Force, this can be changed by going to *Data -> Forces*. All values must be entered in Newton.
+* **Load Type:** In this dropdown menu specifies the load type (static, alternating, pulsating).
+* **Safty Factor:** Factor added to increase the failure threshold of the bolt. Usually the factor takes a value between 1 and 2.
+* **Application Factor:** Factor intorduced to take into account load peaks cause by proper use of the bolt joint.
+* **Material/ Rod Material/ Fork Material:** Dropdown menus to select materials for the bolt, fork and rod. The programm comes with a list of predefined materials. Additional materials can be added by clicking the *Add Material* button. Do not alter the .mat-file manually.
+* **Rod Thickness/ Fork Thickness:** Values to describe the thickness of rod and bolt along the axis of the bolt. Values must be enterd in mm.
+* **Clamping Case:** Case describing the fitting of the bolt in fork and rod. The cases are:
+    * Case 1: Loose fit in fork and rod.
+    * Case 2: Oversize fit in fork and loose fit in rod.
+    * Case 3: Loose fit in fork and oversize fit in rod.
+* **Connection Type:** Defining how many shear faces there are in the bolt joint. For a fork and a rod it is *double shear*.
+* **Standard:** Legal standard defining the bolt geometry.
 
 ## Contact
 For corrections, suggestions and questions please contact me via email: yannick-keller@posteo.de
