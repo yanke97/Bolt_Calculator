@@ -19,7 +19,7 @@ To perform calculations you need to have Microsoft Excel installed on your machi
 ## User Guide
 This section gives a brief overview of the textboxes and dropdown menus in the main window.
 
-*Force in 1/ Force in 2/ Resulting Force: This textboxes allow you to specify the load applied to the bolt. You can either enter force components (Force in 1 and Force in 2) or a Resulting Force. If you choose to enter force components the resulting force will be calculated automatically by the programm. Default is Resulting Force, this can be changed by going to *Data -> Forces*. All values must be entered in Newton.
+* Force in 1/ Force in 2/ Resulting Force: This textboxes allow you to specify the load applied to the bolt. You can either enter force components (Force in 1 and Force in 2) or a Resulting Force. If you choose to enter force components the resulting force will be calculated automatically by the programm. Default is Resulting Force, this can be changed by going to *Data -> Forces*. All values must be entered in Newton.
 
 ## Contact
 For corrections, suggestions and questions please contact me via email: yannick-keller@posteo.de
