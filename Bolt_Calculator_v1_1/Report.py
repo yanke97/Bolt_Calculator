@@ -7,7 +7,7 @@ from typing import Callable, Dict
 from fpdf import FPDF
 
 from Bolt import Bolt
-from calculation import Calculation
+from Calculation import Calculation
 
 
 class PathError(Exception):

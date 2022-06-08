@@ -1,5 +1,5 @@
 from tkinter import Tk
-from main import MainWindow
+from Main import MainWindow
 
 def main() -> None:
     """
