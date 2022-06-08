@@ -14,7 +14,12 @@ BoltCalculator does not require any installations, just download the "BoltCalcul
 
 When first executing the .exe-file there might be an error message saying that some files could not be found. Never the less BoltCalculator will still start and you should be able to see the main window. Before performing any calculations please set all directories to match where you stored BoltCalculator on your machine. If you close and restart BoltCalculator there should be no more error messages. 
 
-To perform calculations you need Excel, the CAD model creation currently only supports SolidWorks.
+To perform calculations you need to have Microsoft Excel installed on your machine. The CAD model creation currently only supports SolidWorks and therefore needs a working installation of SolidWorks
+
+## User Guide
+This section gives a brief overview of the textboxes and dropdown menus in the main window.
+
+*Force in 1/ Force in 2/ Resulting Force: This textboxes allow you to specify the load applied to the bolt. You can either enter force components (Force in 1 and Force in 2) or a Resulting Force. If you choose to enter force components the resulting force will be calculated automatically by the programm. Default is Resulting Force, this can be changed by going to *Data -> Forces*. All values must be entered in Newton.
 
 ## Contact
 For corrections, suggestions and questions please contact me via email: yannick-keller@posteo.de
