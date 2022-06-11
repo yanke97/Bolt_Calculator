@@ -13,7 +13,7 @@ The creator of this application can not be held liable for possible failure of p
 ## How to start
 BoltCalculator does not require any installations, just download the "BoltCalculator.zip" [here](https://github.com/yanke97/Bolt_Calculator/releases/tag/v1.1). Unzip it and execute the .exe-file found inside. Do not remove the .exe-file from the unzipped folder. You may create a shortcut to the .exe.
 
-When first executing the .exe-file there might be an error message saying that some files could not be found. Nevertheless, BoltCalculator will still start, and you should be able to see the main window. Before performing any calculations, please set all directories to match where you stored BoltCalculator on your machine. If you close and restart BoltCalculator there should be no more error messages.
+When first executing the .exe-file there might be an error message saying that some files could not be found. Nevertheless, BoltCalculator will still start, and you should be able to see the main window. Before performing any calculations, please set all directories to match where you stored BoltCalculator on your machine. You can do so by clicking *Settings → Directories*. If you close and restart BoltCalculator there should be no more error messages.
 
 To perform calculations, you need to have Microsoft Excel installed on your machine. The CAD model creation currently only supports SolidWorks and therefore needs a working installation of SolidWorks
 
