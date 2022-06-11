@@ -11,7 +11,7 @@ This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE Version 3 -
 The creator of this application can not be held liable for possible failure of parts calculated using this software or any legal consequences which might arise from such failures. 
 
 ## How to start
-BoltCalculator does not require any installations, just download the "BoltCalculator.zip" here. Unzip it and execute the .exe-file found inside. Do not remove the .exe-file from the unzipped folder. You may create a shortcut to the .exe.
+BoltCalculator does not require any installations, just download the "BoltCalculator.zip" [here](https://github.com/yanke97/Bolt_Calculator/releases/tag/v1.1). Unzip it and execute the .exe-file found inside. Do not remove the .exe-file from the unzipped folder. You may create a shortcut to the .exe.
 
 When first executing the .exe-file there might be an error message saying that some files could not be found. Nevertheless, BoltCalculator will still start, and you should be able to see the main window. Before performing any calculations, please set all directories to match where you stored BoltCalculator on your machine. If you close and restart BoltCalculator there should be no more error messages.
 
