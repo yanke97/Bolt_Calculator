@@ -4,8 +4,11 @@ Tool to calculate bolts using the procedure stated in Roloff/ Matek 23rd edt. Di
 ## Motivation
 The aim of this tool is to support development engineers in their day-to-day work, by automating the frequently performed task of dimensioning bolts. This tool can help the engineers to focus on their main tasks and thereby decrease development lead time.
 
+## License
+This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE Version 3 - see LICENSE file.
+
 ## Disclaimer
-The creator of this application can not be held liable for possible failure of parts calculated using this software or any legal consequences which might arise from such failures. This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE Version 3
+The creator of this application can not be held liable for possible failure of parts calculated using this software or any legal consequences which might arise from such failures. 
 
 ## How to start
 BoltCalculator does not require any installations, just download the "BoltCalculator.zip" here. Unzip it and execute the .exe-file found inside. Do not remove the .exe-file from the unzipped folder. You may create a shortcut to the .exe.
